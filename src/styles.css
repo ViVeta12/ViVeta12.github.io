@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0px;
+  position: relative;
+}
+@font-face {
+  font-family: "menu";
+  src: url(../font/SCDream7.otf);
+}
+#menu {
+  background-color: black;
+  overflow: auto;
+  height: 100%;
+  min-width: 10%;
+  max-width: 60%;
+  width: 200px;
+  position: relative;
+  display: none;
+  z-index: 1;
+}
+.menu {
+  color: white;
+  background-color: black;
+  font-family: "menu";
+  font-size: 150%;
+  text-align: left;
+  line-height: 42px;
+  position: absolute;
+  width: 70%;
+  height: 40px;
+  left: 10%;
+  user-select: none;
+}
+.mclick:hover{
+  background-color: rgb(41, 41, 41);
+}
+#closedmenu {
+  background-color: black;
+  height: 100%;
+  width: 50px;
+  position: relative;
+  display: block;
+  z-index: 1;
+}
+#menuopen {
+  font-family: "menu";
+  user-select: none;
+}
+#게임화면{
+  background-color: aqua;
+  height: 100%;
+  width: calc(100% - 50px);
+  left: 50px;
+  top: -0px;
+  position: absolute;
+  z-index: 0;
+}
