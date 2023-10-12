@@ -19,7 +19,6 @@ body {
   overflow: auto;
   height: 100%;
   width: 500px;
-  min-width: 10%;
   max-width: 60%;
   position: relative;
   display: none;
@@ -44,7 +43,7 @@ body {
 #closedmenu {
   background-color: black;
   height: 100%;
-  width: 15%;
+  width: 100px;
   position: relative;
   display: block;
   z-index: 1;
