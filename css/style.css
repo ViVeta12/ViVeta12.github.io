@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+*{
+    padding: 0px;
+    margin:  0px;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    background-color:rgb(27, 27, 27);
+}
+
+#게임화면{
+    margin: 0 auto;
+    background-color: white;
+    height: 100%;
+    width: 600px;
+}
+
+@media ( max-width: 1000px ){
+    #게임화면{ width: 300px;}
+}
+@media ( max-width: 500px ){
+    #게임화면{ width: 100%;}
+}
+
+.메뉴{
+    width: auto;
+    height: 60px;
+    top: calc(100% - 60px);
+    display: grid;
+    gap: 0px 0px;
+    position: relative
+}
+#메뉴배경{
+    background-color: aqua;
+    grid-template-columns:repeat(5, 1fr);
+}
+.메뉴그림글{
+    display: grid;
+    gap: 0px 0px;
+    grid-template-rows:2fr 1fr;
+}
+.메뉴클릭{
+    font-family: "Black Han Sans";
+    font-size: auto;
+    text-align: center;
+}
