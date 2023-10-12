@@ -18,8 +18,9 @@ body {
   background-color: black;
   overflow: auto;
   height: 100%;
-  width: 500px;
+  min-width: 10%;
   max-width: 60%;
+  width: 200px;
   position: relative;
   display: none;
   z-index: 1;
