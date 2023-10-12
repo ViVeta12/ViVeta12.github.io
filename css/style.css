@@ -20,11 +20,19 @@ body{
 }
 
 @media (hover:none){
-    @media ( min-width: 1001px ){
-        #게임화면{ width: 600px;}
-    }
-    @media (max-width: 1000px){
+    @media (orientation:portrait){
         #게임화면{ width: 100%;}
+    }
+    @media (orientation:landscape){
+        @media ( min-width: 1001px ){
+            #게임화면{ width: 600px;}
+        }
+        @media ( max-width: 1000px ){
+            #게임화면{ width: 300px;}
+        }
+        @media ( max-width: 500px ){
+            #게임화면{ width: 100%;}
+        }
     }
 }
 @media (hover:hover){
