@@ -44,7 +44,7 @@ body {
 #closedmenu {
   background-color: black;
   height: 100%;
-  width: 50px;
+  width: 10%;
   position: relative;
   display: block;
   z-index: 1;
