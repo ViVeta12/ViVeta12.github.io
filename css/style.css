@@ -17,32 +17,11 @@ body{
     margin: 0 auto;
     background-color: white;
     height: 100%;
+    width: 100%;
 }
 
-@media (orientation:portrait){
-    #게임화면{ width: 100%;}
-}
-@media (orientation:landscape){
-    @media ( min-width: 1001px ){
-        #게임화면{ width: 600px;}
-    }
-    @media ( max-width: 1000px ){
-        #게임화면{ width: 300px;}
-    }
-    @media ( max-width: 500px ){
-            #게임화면{ width: 100%;}
-    }
-}
-@media (hover:hover){
-    @media ( min-width: 1001px ){
-        #게임화면{ width: 600px;}
-    }
-    @media ( max-width: 1000px ){
-        #게임화면{ width: 300px;}
-    }
-    @media ( max-width: 500px ){
-        #게임화면{ width: 100%;}
-    }
+@media (min-width:601px){
+    #게임화면{ width: 600px;}
 }
 
 .메뉴{
@@ -54,7 +33,7 @@ body{
     position: relative
 }
 #메뉴배경{
-    background-color: aqua;
+    background-color: green;
     grid-template-columns:repeat(5, 1fr);
 }
 .메뉴그림글{
