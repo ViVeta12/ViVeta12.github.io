@@ -43,7 +43,7 @@ body {
 #closedmenu {
   background-color: black;
   height: 100%;
-  width: 100px;
+  width: 50px;
   position: relative;
   display: block;
   z-index: 1;
