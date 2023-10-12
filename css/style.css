@@ -33,7 +33,7 @@ body{
     position: relative
 }
 #메뉴배경{
-    background-color: green;
+    background-color: aqua;
     grid-template-columns:repeat(5, 1fr);
 }
 .메뉴그림글{
