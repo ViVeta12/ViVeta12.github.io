@@ -1,0 +1,14 @@
+#마을메뉴{
+    height: 100px;
+    display: grid;
+    grid-template-rows:1fr 1fr;
+    z-index: 9;
+    position: relative;
+}
+.마을메뉴{
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+}
+.마을메뉴클릭{
+    line-height : 50px;
+}
