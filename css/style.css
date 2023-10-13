@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@800&display=swap');
 
 *{
     padding: 0px;
     margin:  0px;
+    gap: 0px 0px;
+    color: white;
+    user-select: none;
 }
 
 html,body{
@@ -10,12 +13,12 @@ html,body{
 }
 
 body{
-    background-color:rgb(27, 27, 27);
+    overflow: hidden;
+    background-color:rgb(49, 49, 49);
 }
 
 #게임화면{
     margin: 0 auto;
-    background-color: white;
     height: 100%;
     width: 100%;
 }
@@ -24,25 +27,39 @@ body{
     #게임화면{ width: 600px;}
 }
 
-.메뉴{
+#메뉴{
     width: auto;
     height: 60px;
     top: calc(100% - 60px);
     display: grid;
-    gap: 0px 0px;
+    background-color: black;
+    grid-template-columns:repeat(5, 1fr);
+    z-index: 10;
     position: relative
 }
-#메뉴배경{
-    background-color: aqua;
-    grid-template-columns:repeat(5, 1fr);
-}
 .메뉴그림글{
+    
     display: grid;
-    gap: 0px 0px;
     grid-template-rows:2fr 1fr;
 }
-.메뉴클릭{
-    font-family: "Black Han Sans";
-    font-size: auto;
+.메뉴그림글:hover{
+    background-color: rgb(31, 31, 31);
+}
+.메뉴클릭,.마을메뉴클릭{
+    font-family: "Gothic A1";
     text-align: center;
+    font-size: 85%;
+}
+
+#인게임화면{
+    width: 100%;
+    height: calc(100% - 60px);
+    top: -60px;
+    position: relative;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+#인게임화면::-webkit-scrollbar {
+    display: none;
 }
